@@ -1,0 +1,189 @@
+body {
+  footer {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+  }
+  footer.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  footer {
+    background-color: #d5cebb;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 58px 50px 40px;
+    .container-footer {
+      background-color: var(--red);
+      border-radius: 25px;
+      margin-bottom: 25px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 60px 90px;
+      h3 {
+        color: white;
+        line-height: 36px;
+        font-size: 30px;
+        font-family: var(--font-family-secondary);
+        text-align: center;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        color: white;
+        line-height: 22px;
+        font-weight: 500;
+        font-family: var(--font-family-primary);
+        padding: 20px 0px 20px 0px;
+        text-align: center;
+      }
+      .social-media-img {
+        padding-top: 10px;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+      }
+      img {
+        max-width: 230px;
+        border-radius: 20px;
+      }
+      .button {
+        text-align: center;
+        margin: auto;
+        padding-top: 20px;
+        button {
+          a {
+            color: var(--red);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+
+            line-height: 20px;
+          }
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          background-color: #d5cebb;
+          border: 0 solid;
+          border-radius: 6px;
+          padding: 12px 25px;
+          font-size: 12px;
+
+          line-height: 20px;
+          max-width: 20%;
+          margin-top: 10px;
+          cursor: pointer;
+          align-self: end;
+        }
+        button:hover {
+          background-color: #d5cebbe3;
+        }
+      }
+    }
+    .container-footer-two {
+      background-color: #f9f7ef;
+      border-radius: 25px;
+      padding: 10px 40px;
+      text-align: center;
+      img {
+        max-width: 6%;
+        text-align: center;
+      }
+      p {
+        font-size: 15px;
+        font-family: var(--font-family-primary);
+      }
+    }
+    .container-footer-three {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 45px 0px 12px 0px;
+      .link-footer-one {
+        .instagram-logo {
+          padding-top: 12px;
+        }
+
+        h1 {
+          color: var(--red);
+          font-family: var(--font-family-logo);
+          font-size: 24px;
+          padding-bottom: 10px;
+        }
+        .p-link-one {
+          p {
+            font-size: 16px;
+            font-family: var(--font-family-primary);
+            padding-bottom: 5px;
+            line-height: 22px;
+          }
+        }
+        .p-link-two {
+          p {
+            font-size: 16px;
+            font-family: var(--font-family-primary);
+            padding-top: 5px;
+          }
+        }
+      }
+      .link-footer-two {
+        .p-link-three,
+        .p-link-four {
+          a {
+            text-decoration: none;
+          }
+          p {
+            font-size: 16px;
+            font-family: var(--font-family-primary);
+            padding-top: 5px;
+            text-align: end;
+            color: #7b7b7b;
+            cursor: pointer;
+          }
+          p:hover {
+            color: #32343a;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  body {
+    footer {
+      .container-footer {
+        img {
+          max-width: 27%;
+          border-radius: 6px;
+        }
+        .button {
+          button {
+            max-width: 109%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    footer {
+      .container-footer {
+        img {
+          max-width: 27%;
+          border-radius: 6px;
+        }
+        .button {
+          button {
+            max-width: 109%;
+          }
+        }
+      }
+      .container-footer-three {
+        flex-direction: column;
+        gap: 25px;
+      }
+    }
+  }
+}
